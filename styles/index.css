@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #14141B;
+}
+
+.navg{
+    display: flex;
+    justify-content: space-around;
+}
+.sec1{
+    background-color: #14141B;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/src/images/fondosec1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.titulolargo{
+    align-items: start;
+    display: flex;
+    top: 500px;
+}
+
+.img{
+    width: 25rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circulo{
+    margin: 1vh;
+}
