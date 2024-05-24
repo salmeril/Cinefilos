@@ -212,6 +212,98 @@ body {
 }
 
 
+.sec3{
+    margin-bottom: 15vh;
+}
+
+.grid-container2 {
+    
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    
+
+}
+
+.grid-item2 {
+    background-image: url(/src/images/imageneform.png);
+    
+    color: #14141B;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.grid-itemr{
+    
+    
+    color: #14141B;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+}
+
+.form-container {
+    
+    color: #14141B;
+    padding: 10rem;
+    border-radius: 8px;
+    
+    
+    width: 100%;
+}
+
+.h3form {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 500;
+    color: #FFC83A;
+}
+
+form {
+    text-align: start;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 500;
+    color: #FFC83A;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid ;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.buttonform {
+    background-color: #FF3A3A;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonform:hover {
+    background-color: #cc2d2d;
+}
 
 
 
