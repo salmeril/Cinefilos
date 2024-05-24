@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    
     
 }
 
@@ -8,29 +11,42 @@ body{
     margin: 0;
     padding: 0;
     color: none;
+    background-color: #14141B;
+    
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 
 
 
 
 .navg{
-    display: flex;
-    justify-content: space-around;
+    display: block;
+   justify-content: center;
     background-color: #14141B;
+   
+
 }
 
+.navg-contenedor{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+}
 
 .imglogo{
-    width: 25rem;
+    display: flex;
+    width: 22rem;
 }
 
 .redes{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 2vh;
 }
 
 .circulo{
@@ -63,21 +79,102 @@ body{
     align-items: start;
     display: block;
     margin: 50vh;
-    margin-top: 28vh;
-    margin-left: 10vh;
+    margin-top: 20vh;
+    margin-left: 25vh;
   
 }
 
 .h1portada{
     color: #fff;
-    font-family: "Raleway", sans-serif;;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
+    margin-top: 20vh;
 }
 
 .segundotitulo{
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
+    
 }
 
 
+.Imperdible{
+    text-align: center;
+    width: 13%;
+    padding: 1vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #14141B;
+    border: none;
+    
+    background-color: #FFC83A;
+}
+
+
+.sec1 .titulolargo .button{
+    color: white;
+    background-color:#FF3A3A ;
+    margin-top: 2vh;
+    border: none;
+    padding: 4vh;
+    padding-top: 1.5vh;
+}
+
+.sec1 .titulolargo .button .h4boton{
+    font-family: "Raleway" , sans-serif;
+    font-weight: 500;
+    font-size: 18px ;
+}
+
+.divisor{
+    
+    margin-top: 0vh;
+    margin-left: 12%;
+    margin-right: 50%;
+    display: flex;
+    color: #FFC83A;
+    width: 1444px;
+    
+    
+    border-color: #FFC83A;
+    margin-bottom: 2%;
+}
+
+.contenedorboxes{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.beneficios{
+    font-family: "Raleway" , sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-left: 12%;
+    margin-bottom: 1vh;
+    margin-top: 12vh;
+    
+}
+
+.box1text{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    box-sizing: border-box;
+    border: #FFC83A solid 1px;
+    padding-left: 2vh;
+    font-size: 3vh;
+    
+    width: 385px;
+    height: 204px;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 400;
+    z-index: 0;
+}
+
+.icono1{
+    
+}
