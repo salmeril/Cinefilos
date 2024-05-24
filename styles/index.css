@@ -1,66 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    
-    
+    box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     color: none;
     background-color: #14141B;
-    
 }
 
-
-
-
-
-
-
-
-.navg{
-    display: block;
-   justify-content: center;
+.navg {
     background-color: #14141B;
-   
-
+    padding: 1rem 10%;
 }
 
-.navg-contenedor{
+.navg-contenedor {
     display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.imglogo{
-    display: flex;
+.imglogo {
     width: 22rem;
+    max-width: 100%;
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 2vh;
+    margin: 2vh 0;
 }
 
-.circulo{
+.circulored {
     margin: 1vh;
 }
 
-
-
-
-
-
-
-.sec1{
-    
+.sec1 {
     width: 100%;
     height: 100vh;
     background-image: url(/src/images/fondosec1.png);
@@ -68,113 +49,253 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
-    
-    
-}
-.titulolargo{
-    background-color: transparent;
-    align-items: start;
-    justify-content: start;
-    align-items: start;
-    display: block;
-    margin: 50vh;
-    margin-top: 20vh;
-    margin-left: 25vh;
-  
+    text-align: center;
 }
 
-.h1portada{
+.titulolargo {
+    background-color: transparent;
+    margin: 20vh 0;
+    text-align: left;
+    max-width: 80%;
+}
+
+.h1portada {
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    margin-top: 20vh;
 }
 
-.segundotitulo{
+.segundotitulo {
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
-    
 }
 
-
-.Imperdible{
+.Imperdible {
     text-align: center;
-    width: 13%;
-    padding: 1vh;
+    width: auto;
+    max-width: 16vh;
+    
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     color: #14141B;
     border: none;
-    
     background-color: #FFC83A;
+    
 }
 
-
-.sec1 .titulolargo .button{
+.sec1 .button {
     color: white;
-    background-color:#FF3A3A ;
+    background-color: #FF3A3A;
     margin-top: 2vh;
     border: none;
-    padding: 4vh;
-    padding-top: 1.5vh;
+    padding: 1.5vh 4vh;
 }
 
-.sec1 .titulolargo .button .h4boton{
-    font-family: "Raleway" , sans-serif;
+.sec1 .h4boton {
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
-    font-size: 18px ;
+    font-size: 18px;
 }
 
-.divisor{
-    
-    margin-top: 0vh;
-    margin-left: 12%;
-    margin-right: 50%;
+.divisor {
+    margin: 0 17%;
     display: flex;
     color: #FFC83A;
-    width: 1444px;
-    
-    
+    width: 100%;
+    max-width: 1240px;
     border-color: #FFC83A;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
-.contenedorboxes{
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.beneficios{
-    font-family: "Raleway" , sans-serif;
+.beneficios {
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     color: white;
-    margin-left: 12%;
-    margin-bottom: 1vh;
-    margin-top: 12vh;
-    
+    margin: 12vh 17% 1vh;
 }
 
-.box1text{
-    
-    justify-content: center;
-    align-items: center;
+.contenedor-rectangulos {
+    position: relative;
+    padding: 90px 2rem;
     display: flex;
-    color: white;
-    box-sizing: border-box;
-    border: #FFC83A solid 1px;
-    padding-left: 2vh;
-    font-size: 3vh;
-    
-    width: 385px;
-    height: 204px;
-    font-family: "Raleway" , sans-serif;
-    font-weight: 400;
-    z-index: 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.icono1{
+.rectangulo {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    height: 204px;
+    border: 2px solid #ffca3a;
+    position: relative;
+    text-align: center;
+    margin: 10vh 1rem;
+    box-sizing: border-box;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 200, 58, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.imagen-superpuesta {
+    position: absolute;
+    bottom: -90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textoCard {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    color: white;
+    text-align: start;
+    margin: 2vh;
+}
+
+.grid-container {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem; /* Espacio entre los elementos */
+    justify-content: center;
+    padding: 2rem;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.recoimg{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgrecorta{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.reco{
+    margin-bottom: 15vh;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .navg-contenedor {
+        padding: 0 5%;
+    }
+    .sec1 {
+        justify-content: start;
+    }
+    .titulolargo {
+        margin: 10vh 0;
+    }
+    .beneficios {
+        margin: 6vh 6% 1vh;
+        text-align: center;
+    }
+    .contenedor-rectangulos {
+        padding: 45px 1rem;
+    }
+    .rectangulo {
+        margin: 5vh 0.5rem;
+    }
+    .Imperdible {
+        display: flex;
+        width: auto;
+        background-color: #FFC83A;
+        font-size: medium;
+        top: 100vh;
+        
+
+    }
+
+    .imagen-superpuesta{
+        display: none;
+    }
+
+
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .h1portada{
+        font-size: xx-large;
+    }
+
+    .segundotitulo{
+        font-size: large;
     
+    }
+
+    .redes{
+        display: none;
+    }
+    .navg {
+        padding: 1rem 5%;
+    }
+    .titulolargo {
+        margin: 5vh 0;
+    }
+    .beneficios {
+        margin: 3vh 3% 1vh;
+    }
+    .contenedor-rectangulos {
+        padding: 30px 1rem;
+    }
+    .rectangulo {
+        margin: 2vh 0.5rem;
+    }
+
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recoimg{
+        display: flex;
+    }
 }
