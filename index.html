@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/guardar_datos.js" defer></script>
+    <script src="js/agradecimiento.js" defer></script>
     <title>Cinefilos</title>
 </head>
 <body>
@@ -18,55 +18,46 @@
     <nav class="navg">
         <div class="navg-contenedor">
             <div class="logo"><img class="imglogo" src="/src/icons/marca.png" alt="Logo"></div>
-        <div class="redes">
-            <div><img class="circulored" src="/src/icons/circulointagram.png" alt="circulos"></div>
-            <div><img class="circulored" src="/src/icons/circulofacebook.png" alt="circulos"></div>
-            <div><img class="circulored" src="/src/icons/circuloyt.png" alt="circulos"></div>
+            <div class="redes">
+                <div><img class="circulored" src="/src/icons/circulointagram.png" alt="circulos"></div>
+                <div><img class="circulored" src="/src/icons/circulofacebook.png" alt="circulos"></div>
+                <div><img class="circulored" src="/src/icons/circuloyt.png" alt="circulos"></div>
+            </div>
         </div>
-        </div>
-        
-    
     </nav>
-
 
     <div class="sec1">
         <div class="titulolargo">
             <h5 class="Imperdible">IMPERDIBLE</h5>
-            
             <h1 class="h1portada">Fin de Semana Cinematográfico</h1>
             <h3 class="segundotitulo">Recomendaciones de peliculas Exclusivas para Disfrutar con tu Persona Favorita</h3>
             <a class="button" href=""><h4 class="h4boton">ÚNETE Y DESCUBRE</h4></a>
         </div>
-        
     </div>
 
     <div class="linea">
         <h3 class="beneficios">BENEFICIOS INCREIBLES</h3>
         <hr class="divisor">
     </div>
-    
 
     <div class="contenedor-rectangulos">
-        
         <div class="rectangulo">
             <div class="circulo">1</div>
-             <p class="textoCard">Lista de las pelis mas vistas en la semana</p>
-              </div> 
-              <div class="rectangulo">
-                   <div class="circulo">2</div>
-                    <p class="textoCard">Criticas y puntuaciones de las recomendaciones</p>
-                     </div>
-                     <div class="rectangulo"> 
-                         <div class="circulo">3</div>
-                          <p class="textoCard">Recomendaciones de peliculas personalizadas</p>
-                       </div> 
-                   </div> 
-                   <img src="/src/icons/pochoclos.png" alt="Descripción de la imagen"class="imagen-superpuesta">
+            <p class="textoCard">Lista de las pelis más vistas en la semana</p>
+        </div>
+        <div class="rectangulo">
+            <div class="circulo">2</div>
+            <p class="textoCard">Críticas y puntuaciones de las recomendaciones</p>
+        </div>
+        <div class="rectangulo">
+            <div class="circulo">3</div>
+            <p class="textoCard">Recomendaciones de películas personalizadas</p>
+        </div>
+        <img src="/src/icons/pochoclos.png" alt="Descripción de la imagen" class="imagen-superpuesta">
     </div>
 
-
     <div class="linea">
-        <h3 class="beneficios">¿POR QUE SUSCRIBIRSE?</h3>
+        <h3 class="beneficios">¿POR QUÉ SUSCRIBIRSE?</h3>
         <hr class="divisor">
     </div>
 
@@ -81,68 +72,62 @@
             <img src="/src/images/imagen3.png" alt="Item 3">
         </div>
     </div>
-    
 
     <div class="linea">
-        <h3 class="beneficios">RECOMENDACION SEMANAL</h3>
+        <h3 class="beneficios">RECOMENDACIÓN SEMANAL</h3>
         <hr class="divisor">
     </div>
 
-    <div class="reco">
-        <a href=""><img class="imgrecorta" src="/src/images/recorta.png" alt=""></a>
-        <a href=""><img class="recoimg" src="/src/images/recomendacionsemanal.png" alt=""></a>
-        
-        
+    <div class="reco" onclick="showOverlay()">
+        <h3 class="sobretext">Aquí encontrarás las últimas recomendaciones de películas de la semana</h3>
     </div>
 
+    <div id="overlay" class="overlay" onclick="hideOverlay()">
+        <div class="overlay-content">
+            <img src="/src/images/Group 21.png" alt="Imagen de Alerta">
+        </div>
+    </div>
 
     <div class="sec3">
         <div class="grid-container2">
-            <div class="grid-itemr"><div class="form-container">
-                <h3 class="h3form">SI TE QUERES ENTERAR DE LAS PELICULAS RECOMENDADAS DELA SEMANA, SUMATE.</h3>
-                <form>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <div class="grid-itemr">
+                <div class="form-container">
+                    <h3 class="h3form">SI TE QUIERES ENTERAR DE LAS PELÍCULAS RECOMENDADAS DE LA SEMANA, SÚMATE.</h3>
+                    <form id="myForm">
+                        
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        
+                        <input type="email" id="email" name="email" placeholder="Dirección de Correo Electrónico" required>
+                        <button class="buttonform" type="submit">Unirme</button>
+                    </form>
+                </div>
                 
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Direccion de Correo Electronico" required>
-                
-                    <button class="buttonform" type="submit">Unirme</button>
-                </form>
+            </div>
+            <div class="grid-item2">
+                <!--<img src="/src/images/imageneform.png" class="imgform" alt="" >-->
             </div>
         </div>
-        <div class="grid-item2">
-            <!--<img src="/src/images/imageneform.png" class="imgform" alt="" >-->
+    </div>
+            
         </div>
     </div>
-    </div>
-    
-      
 
-</body>
-
-<footer>
-    <div class="foot">
-        <div class="main-grid">
-            <div class="main-itemimg"><img class="main-img" src="/src/icons/marca.png" alt=""></div>
-            <div class="main-item">Somos una comunidad de jóvenes unidos por el cine. <br><br>Apoyamos el séptimo arte como interlocutor de <br> grandes historias y como el mejor espacio para <br> conocer otras ficciones... <br> <a href="">Leer más...</a></div>
-            <div class="main-item3">
-                <div class="sub-grid">
-                    <div class="sub-itemtit"><p class="textfootface">SEGUINOS</p></div>
-                    <div class="sub-item"><img class="footface" src="/src/icons/circulointagram.png" alt=""><p class="textfoot">Instagram</p></div>
-                    <div class="sub-item"><img class="footface" src="/src/icons/circulofacebook.png" alt=""><p class="textfoot">Facebook</p></div>
-                    <div class="sub-item"><img class="footface" src="/src/icons/circuloyt.png" alt=""><p class="textfootYT">You Tube</p></div>
+    <footer>
+        <div class="foot">
+            <div class="main-grid">
+                <div class="main-itemimg"><img class="main-img" src="/src/icons/marca.png" alt=""></div>
+                <div class="main-item">Somos una comunidad de jóvenes unidos por el cine. <br><br>Apoyamos el séptimo arte como interlocutor de <br> grandes historias y como el mejor espacio para <br> conocer otras ficciones... <br> <a href="">Leer más...</a></div>
+                <div class="main-item3">
+                    <div class="sub-grid">
+                        <div class="sub-itemtit"><p class="textfootface">SÍGUENOS</p></div>
+                        <div class="sub-item"><img class="footface" src="/src/icons/circulointagram.png" alt=""><p class="textfoot">Instagram</p></div>
+                        <div class="sub-item"><img class="footface" src="/src/icons/circulofacebook.png" alt=""><p class="textfoot">Facebook</p></div>
+                        <div class="sub-item"><img class="footface" src="/src/icons/circuloyt.png" alt=""><p class="textfootYT">YouTube</p></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+</body>
 </html>
-
-
-
-
-
-  
- 
