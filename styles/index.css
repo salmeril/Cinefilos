@@ -292,7 +292,7 @@ body {
 }
 
 .overlay-content {
-    background: white;
+    background: #FFC83A;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -302,6 +302,31 @@ body {
     max-width: 90%;
     height: auto;
     border-radius: 10px;
+}
+
+.imgAlerta{
+    margin: 2vh;
+}
+
+.tituloAlerta{
+    color: #14141B;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 700;
+}
+
+.textoAlerta{
+    color: #14141B;
+    font-family: "Raleway" , sans-serif;
+    font-size: x-large;
+    max-width: 45vh;
+    font-weight: 500;
+}
+
+.butoonAlerta{
+    font-family: "Raleway" , sans-serif;
+    font-weight: 500;
+    background-color: #cc2d2d;
+    margin-top: 3vh;
 }
 
 

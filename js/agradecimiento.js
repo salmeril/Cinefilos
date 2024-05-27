@@ -16,11 +16,3 @@ if (correo) {
 
 
 
-// Agregar evento de clic al elemento .reco
-document.querySelector('.reco').addEventListener('click', function() {
-    // Obtener la sección específica a la que deseas desplazarte (por ejemplo, con el id 'seccionEspecifica')
-    var seccionEspecifica = document.getElementById('sec3');
-
-    // Desplazar la página hacia la sección específica
-    seccionEspecifica.scrollIntoView({ behavior: 'smooth' });
-});
